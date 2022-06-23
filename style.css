@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #1b3060,
+    #36498b,
+    #5662b9,
+    #7b7ce7
+  );
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 332.4px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: grid;
+  place-items: center;
+  box-shadow: 0.1px 0.4px 0.1px #fff, 0.3px 0.4px 0.1px rgb(255, 255, 255);
+}
+
+#wrapper h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 44px;
+  user-select: none;
+}
+
+#wrapper h1 span {
+  color: #37f;
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 95%;
+  }
+
+  #wrapper h1 {
+    font-size: 22px;
+  }
+}
+
+.container #display {
+  height: 80px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 34px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.container .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container .buttons .button {
+  padding: 30px;
+  text-align: center;
+  font-weight: 700;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.container .buttons .button:hover {
+  color: #000;
+}
